@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn" onclick="openpop()">Click me</button>
+    </div>
+    <!-- Add an id to the div -->
+    <div class="pop_up" id="pop_up">
+        <img src="1tick.png" alt="">
+        <h2>Thank you!</h2>
+        <p>Details submitted successfully. We will get back to you soon, Thank You!</p>
+        <button type="button" onclick="closepop()">Done</button>
+    </div>
+    
+    <script>
+        let popup = document.getElementById("pop_up");
+        function openpop() {
+            popup.classList.add("openpopup");
+        }
+        function closepop() {
+            popup.classList.remove("openpopup");
+        }
+    </script>
+</body>
+</html>
